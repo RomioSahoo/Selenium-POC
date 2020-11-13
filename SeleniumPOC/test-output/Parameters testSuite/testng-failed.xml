@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Parameters testSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test 1(failed)">
+    <parameter name="chromeDriver" value="webdriver.chrome.driver"/>
+    <parameter name="baseurl" value="https://www.google.com/"/>
+    <parameter name="baseurl2" value="https://twitter.com/"/>
+    <parameter name="location" value="F:\\softwares\\chromedriver.exe"/>
+    <parameter name="sendKey1" value="gmail"/>
+    <parameter name="userName" value="Romio Ranjan Sahoo"/>
+    <parameter name="sendKey2" value="selenium"/>
+    <parameter name="userNumber" value="7008066158"/>
+    <classes>
+      <class name="com.cognizant.googleAutomate.AutomatingGoogle">
+        <methods>
+          <include name="test" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.cognizant.googleAutomate.AutomatingGoogle -->
+    </classes>
+  </test> <!-- Test 1(failed) -->
+</suite> <!-- Failed suite [Parameters testSuite] -->
